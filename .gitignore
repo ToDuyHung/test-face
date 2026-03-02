@@ -1,0 +1,17 @@
+# Model weights (too large for GitHub — download separately)
+models/w600k_r50.onnx
+models/arcface_r50.mlpackage/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+
+# Environments
+.env
+*.egg-info/
+
+# OS
+.DS_Store
+Thumbs.db

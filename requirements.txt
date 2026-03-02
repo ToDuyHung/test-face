@@ -1,0 +1,23 @@
+# Face Recognition Test Suite — Requirements
+# Install: pip install -r requirements.txt
+
+# ── Core deep learning ────────────────────────────────────────────────────────
+torch>=1.8.0
+torchvision>=0.9.0
+
+# ── Face detection + alignment ────────────────────────────────────────────────
+facenet-pytorch>=2.5.2        # MTCNN + InceptionResnetV1
+
+# ── ArcFace R50 via ONNX ─────────────────────────────────────────────────────
+onnxruntime>=1.14.0           # CPU inference (use onnxruntime-gpu for GPU)
+onnx>=1.9.0
+
+# ── Image I/O ─────────────────────────────────────────────────────────────────
+opencv-python>=4.5.0
+Pillow>=9.0.0
+numpy>=1.21.0
+
+# ── CoreML conversion & inference (macOS only) ───────────────────────────────
+# Uncomment on macOS:
+# coremltools>=7.0
+# onnx2torch>=1.5.0          # bridge ONNX → TorchScript for CoreML conversion
